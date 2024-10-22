@@ -1,27 +1,25 @@
-# Divisors
+# GCD
 
-Finding divisors of a given number.  
-For example 50 has dividers: 1, 2, 5, 10, 25, 50.
+Calculating of the greatest common divisor of two numbers using two methods:
+
+* by subtraction - function `GCD_substraction`,
+* by dividing modulo - function `GCD_modulo`.
 
 The solution consist of three projects:
-* _DivisorsLib_ - library containing `divisors` function,
-* _DivisorsUnitTest_ - unit test for `divisors` function,
-* _DivisorsApp_ - sample aplication calling `divisors` function.
+* _GCDLib_ - library containing: `GCD_substraction`, `GCD_modulo` functions,
+* _GCDUnitTest_ - unit test for: `GCD_substraction`, `GCD_modulo` functions,
+* _GCDApp_ - sample aplication calling: `GCD_substraction`, `GCD_modulo` functions.
 
-## Task 1
-* Measure the `divisors` function execution time for numbers with large values: 10<sup>7</sup>, 10<sup>8</sup>, 10<sup>9</sup> ...
-* Draw a graph of the dependence of the execution time on the value of the number.
-* What is the nature of the drawn relationship (linear, square, square root, exponential)?
-* Estimate the execution time of the `divisors` function for 10<sup>18</sup> (give the time in years).
+## Tasks
+Implement the `GCD_modulo` function that compute GCD using dividing modulo operation.
+Check corectness of computation using unit tests.
+Measure and compare `GCD_substraction`, `GCD_modulo` functions execution time for number:
 
-## Task 2
-* Tweak the `divisors` function implementation so that it has less complexity.
-* Measure the `divisors` function execution time for numbers with large values:
- 10<sup>10</sup>, 10<sup>15</sup>, 10<sup>16</sup>, 10<sup>17</sup>, 10<sup>18</sup>.
-* Draw a graph of the dependence of the execution time on the value of the number.
-* What is the nature of the drawn relationship (linear, square, square root, exponential)?
-
-Divisors must be placed in ascending order in the returned collection.  
-The given divisor may appear only once in the resulting collection.
-
-Tip: If A is a divisor of N, then N/A is also the divisor of N. Unit tests will help you verify that the `divisors` function is working properly.
+* Implement the function `GCD_modulo` which computes the GCD using
+ a modulo division operation.
+* Check the correctness of calculations - using unit tests.
+* Measure and compare the execution time of the function:
+ `GCD_substraction`,` GCD_modulo` for the given numbers:
+  * 10<sup>3</sup> and 3,
+  * 10<sup>6</sup> and 3,
+  * 10<sup>10</sup> and 3.
